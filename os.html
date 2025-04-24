@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our OS - Suradas AI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: #fff;
+      color: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #444;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      background: #111;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #fff;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #fff;
+      color: #000;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header, footer {
+        padding: 1rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our OS</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mission.html">Our Mission</a>
+      <a href="components.html">Components Used</a>
+      <a href="os.html">Our OS</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>OS Development Overview</h2>
+      <p>The custom OS for Suradas AI Pin is optimized for low-power, high-performance wearable use. Built on lightweight Linux-based distros, it integrates voice AI, hardware drivers, and smart power management for seamless daily operation.</p>
+    </section>
+
+    <section>
+      <h2>Development Phases</h2>
+      <h3>Phase 1: Research & Feasibility</h3>
+      <ul>
+        <li>Evaluate distros: Buildroot, Yocto, Raspberry Pi OS Lite</li>
+        <li>Check hardware support (Raspberry Pi Zero 2 W / Cortex A53)</li>
+        <li>Explore AI voice frameworks: Mycroft, Picovoice, Vosk</li>
+      </ul>
+
+      <h3>Phase 2: Base OS Setup</h3>
+      <ul>
+        <li>Choose minimal OS (Buildroot/Yocto)</li>
+        <li>Add hardware drivers: mic, speaker, camera, BT/WiFi</li>
+        <li>Create bootable image with CLI and device support</li>
+      </ul>
+
+      <h3>Phase 3: AI Stack Integration</h3>
+      <ul>
+        <li>Install voice & vision models: Whisper, TFLite, eSpeak</li>
+        <li>Enable fallback voice menu for resets</li>
+        <li>Optimize for on-boot AI services</li>
+      </ul>
+
+      <h3>Phase 4: Voice Interaction Layer</h3>
+      <ul>
+        <li>Basic NLP command interpreter</li>
+        <li>Spoken response engine with TTS</li>
+        <li>System logging for training/debugging</li>
+      </ul>
+
+      <h3>Phase 5: Power & Security</h3>
+      <ul>
+        <li>Enable power-saving features, low-idle modes</li>
+        <li>Secure boot, minimal open ports</li>
+        <li>Support for OTA model updates</li>
+      </ul>
+
+      <h3>Phase 6: Final Polish</h3>
+      <ul>
+        <li>Log cleanup, doc writing</li>
+        <li>Flashable OS image</li>
+        <li>GitHub wiki + command manual</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <ul>
+        <li><strong>OS:</strong> Buildroot / Yocto (lightweight, customizable)</li>
+        <li><strong>AI:</strong> TFLite, Whisper/Vosk, eSpeak NG</li>
+        <li><strong>Languages:</strong> Python (logic), C++ (drivers)</li>
+        <li><strong>Hardware:</strong> Raspberry Pi Zero 2 W / Custom SBC</li>
+        <li><strong>Version Control:</strong> GitHub (private repository)</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Suradas AI Project. All rights reserved.
+  </footer>
+
+</body>
+</html>
